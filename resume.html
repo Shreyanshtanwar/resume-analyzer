@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Scanner</title>
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+<header>
+  <h1>RESU-LYZER 3000</h1>
+  <p>Your futuristic career compatibility engine</p>
+</header>
+
+<div class="container">
+  <div class="grid">
+    <div>
+      <h3>💾 YOUR RESUME</h3>
+      <textarea id="resumeText" placeholder="Drop your life's work here..."></textarea>
+    </div>
+
+    <div>
+      <h3>🎯 TARGET JOB</h3>
+      <textarea id="jobText" placeholder="What's the dream job?"></textarea>
+    </div>
+  </div>
+
+  <div class="btn-container">
+    <button onclick="analyzeResume()">⚡ Scan Compatibility</button>
+  </div>
+
+  <div id="output" class="result">
+    <div id="score" class="score-circle">0%</div>
+    
+    <div class="grid">
+      <div>
+        <h4>✅ YOU'VE GOT THIS:</h4>
+        <div id="matchedSkills" class="tags"></div>
+      </div>
+      <div>
+        <h4>❌ LEVEL UP ON:</h4>
+        <div id="missingSkills" class="tags"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="resume.js">
+</script>
+
+</body>
+</html>
